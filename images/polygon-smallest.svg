@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="99px" height="101px" viewBox="0 0 99 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Polygon Copy 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.7068841%" y1="67.1898641%" x2="120.743481%" y2="8.73137113%" id="linearGradient-1">
+            <stop stop-color="#0002FE" offset="0%"></stop>
+            <stop stop-color="#00CAFF" offset="62.9293216%"></stop>
+            <stop stop-color="#01FFA3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.520717076">
+        <g id="Login-page-Copy" transform="translate(-25.000000, -652.000000)" fill="url(#linearGradient-1)">
+            <path d="M85.4736093,654.776721 L112.645709,674.518407 C120.706919,680.375219 124.080057,690.756668 121.000948,700.233189 L110.62213,732.175908 C107.543021,741.652429 98.7120337,748.068517 88.7478297,748.068517 L55.1612672,748.068517 C45.1970632,748.068517 36.3660757,741.652429 33.2869673,732.175908 L22.9081488,700.233189 C19.8290404,690.756668 23.2021774,680.375219 31.2633878,674.518407 L58.4354876,654.776721 C66.496698,648.919909 77.4123989,648.919909 85.4736093,654.776721 Z" id="Polygon-Copy-7" transform="translate(71.954548, 701.954548) rotate(92.000000) translate(-71.954548, -701.954548) "></path>
+        </g>
+    </g>
+</svg>

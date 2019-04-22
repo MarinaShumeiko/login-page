@@ -26,40 +26,42 @@
                 <div class="polygon polygon-border-small"><img src="images/polygon-border-small.svg" alt=""></div>
             </div>
             <div class="login">
-                <div class="login-form">
-                    <div class="logo"><img src="images/logo.svg" alt="facebook"></div>
-                    <div class="logo-text">Sign in with your social media account or enter your email and password.</div>
-                    <div class="social-icons">
-                        <a href=""><img src="images/fb.svg" alt="facebook"></a>
-                        <a href=""><img src="images/google.svg" alt="google"></a>
-                        <a href=""><img src="images/github.svg" alt="github"></a>
+                <div class="login-form flex-layout">
+                    <div class="flex_1 flex-grow">
+                        <div class="logo"><img src="images/logo.svg" alt="facebook"></div>
+                        <div class="logo-text">Sign in with your social media account or enter your email and password.</div>
+                        <div class="social-icons">
+                            <a href=""><img src="images/fb.svg" alt="facebook"></a>
+                            <a href=""><img src="images/google.svg" alt="google"></a>
+                            <a href=""><img src="images/github.svg" alt="github"></a>
+                        </div>
+                        <form class="form pb-64" action="">
+                            <div class="form-row">
+                                <label for="">Email</label>
+                                <input type="text"></input>
+                            </div>
+                            <div class="form-row">
+                                <label for="">Password</label>
+                                <input type="text"></input>
+                            </div>
+                            <div class="flex-layout pb-24">
+                                <div class="flex_1">
+                                    <input class="checkbox" type="checkbox" id="ossm" name="ossm"> 
+                                    <label class="checkbox-label" for="ossm">Remember me</label> 
+                                </div>
+                                <div class="flex_1 align-right">
+                                    <a class="link" href="">Forgot password?</a>
+                                </div>
+                            </div>
+                            <button class="btn-primary">
+                                sing in
+                            </button>
+                            <div class="flex-layout fs-12">
+                                <p class="flex_1">You don't have an account?</p>
+                                <a class="link flex_1 align-right" href="">Sing up for FREE</a>
+                            </div>
+                        </form>
                     </div>
-                    <form class="form pb-64" action="">
-                        <div class="form-row">
-                            <label for="">Email</label>
-                            <input type="text"></input>
-                        </div>
-                        <div class="form-row">
-                            <label for="">Password</label>
-                            <input type="text"></input>
-                        </div>
-                        <div class="flex-layout pb-24">
-                            <div class="flex_1">
-                                <input class="checkbox" type="checkbox" id="ossm" name="ossm"> 
-                                <label class="checkbox-label" for="ossm">Remember me</label> 
-                            </div>
-                            <div class="flex_1 align-right">
-                                <a class="link" href="">Forgot password?</a>
-                            </div>
-                        </div>
-                        <button class="btn-primary">
-                            sing up
-                        </button>
-                        <div class="flex-layout fs-12">
-                            <p class="flex_1">You don't have an account?</p>
-                            <a class="link flex_1 align-right" href="">Sing up for FREE</a>
-                        </div>
-                    </form>
                     <ul class="bottom-list">
                         <li><a href="">Support</a></li>
                         <li><a href="">Terms of service</a></li>

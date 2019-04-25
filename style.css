@@ -19,6 +19,10 @@ body {
     flex: 1;
 }
 
+.flex-between {
+    justify-content: space-between;
+}
+
 .link {
     text-decoration: none;
     color: #12A397;
@@ -64,89 +68,101 @@ body {
 }
 
 .polygon-grey {
+    position: absolute;
     right: -35%;
     top: 0;
-}
-
-.polygon-grey img {
-   width: 500px;
+    width: 500px;
 }
 
 .polygon-blue {
+    position: absolute;
     left: 0;
     top: 0;
-}
-
-.polygon-blue img {
-   height: 400px;
+    height: 400px;
 }
 
 .polygon-small-1 {
     left: 45%;
     top: 0;
-    animation: move3 30s infinite linear;
-}
-
-.polygon-small-1 img,
-.polygon-small-2 img  {
-    width: 140px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move1 30s infinite linear;
 }
 
 .polygon-small-2 {
     right: 0;
     bottom: 0;
-    animation: move2 40s infinite linear;
-}
-
-.polygon-small-1 img  {
-    animation: size 50s infinite linear;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move2 30s infinite linear;
 }
 
 .polygon-smallest {
-    left: -8%;
-    bottom: 6%;
-    animation: move 50s infinite linear;
+    left: -3%;
+    bottom: 30%;
+    width: 100px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move2 30s infinite linear;
 }
 
-.polygon-smallest img  {
-    width: 100px;
+.polygon-small-3 {
+    left: 70%;
+    top: 10%;
+    width: 80px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move2 20s infinite linear;
+}
+
+.polygon-small-4 {
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move3 20s infinite linear;
+}
+
+.polygon-smallest-1 {
+    left: 50%;
+    bottom: 400px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 2;
+    animation: move3 30s infinite linear;
 }
 
 .polygon-ga {
-    position: relative;
+    position: absolute;
     left: 40%;
     top: 20%;
 }
 
 .polygon-ga img  {
-    width: 440px;
+    width: 600px;
+    z-index: 2;
 }
-
-.left-text-box {
-    position: absolute;
-    left: 200px;
-    top: 180px;
-    width: 200px;
-    color: #fff;
-    z-index: 1  ;
+@media (max-width: 1460px) { 
+    .polygon-ga img {
+        width: 500px;
+    }
+      
 }
-
-.left-text-box h1 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
 @media (max-width: 1280px) { 
     .polygon-ga {
         left: 32%;
         top: 20%;
     }
-    
-    .polygon-ga img  {
-        width: 380px;
-    }
 
+    .polygon-ga img {
+        width: 400px;
+    }
+    
     .left-text-box {
         left: 130px;
         top: 140px;
@@ -154,112 +170,51 @@ body {
 }
 
 .polygon-border-large {
-    left: -20%;
-    top: -10%;
+    left: -100px;
+    top: -50px;
+    width: 400px;
+    cursor: pointer;
     animation: rotate-left 50s infinite linear;
 }
 
-.polygon-border-large img {
-   width: 500px;
-}
-
 @media (max-width: 1280px) { 
-    polygon-border-large {
+    .polygon-border-large {
         left: -30%;
         top: -10%;
-    }
-    
-    .polygon-border-large img {
         width: 400px;
-     }
+    }
 }
 
 .polygon-border-medium {
     left: 7%;
-    bottom: -25%;
+    bottom: -20px;
+    width: 250px;
+    cursor: pointer;
     animation: rotate 30s infinite linear;
-}
-
-.polygon-border-medium img {
-   width: 300px;
 }
 
 .polygon-border-small {
     left: 10%;
-    bottom: -20%;
+    bottom: -50px;
+    width: 180px;
+    cursor: pointer;
     animation: rotate 20s infinite linear;
 }
 
-.polygon-border-small img {
-   width: 250px;
+.left-text-box {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
 }
 
-@keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-left {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-}
-
-@keyframes move {
-    0% {
-        top: 0;
-        left: 45%;
-        transform: rotate(0);
-    }
-    100% {
-       top: 20%;
-       left: -30%;
-       transform: rotate(360deg);
-    }
-}
-
-@keyframes move2 {
-    0% {
-        right: 0;
-        bottom: 0;
-        transform: rotate(0);
-    }
-    100% {
-        left: 50%;
-        bottom: 36%;
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes move3 {
-    0% {
-        right: 0;
-        bottom: 0;
-        transform: rotate(0);
-    }
-    100% {
-        right: -20%;
-        bottom: 40%;
-        transform: rotate(-360deg);
-    }
-}
-
-@keyframes size {
-    0% {
-        width: 140px;
-        height: 140px;
-    }
-    100% {
-        width: 40px;
-        height: 40px;
-    }
+.left-text-box h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .login {
@@ -274,7 +229,7 @@ body {
 .login-form {
     position: relative;
     flex-direction: column;
-    padding: 48px 16px 16px;
+    padding: 0 16px 16px;
     width: 400px;
     border-radius: 4px;
     z-index: 1;

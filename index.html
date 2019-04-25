@@ -4,30 +4,34 @@
         <title>Login page</title>
         <meta content="text/html; charset=utf-8"http-equiv="Content-Type">
         <link rel="stylesheet" type="text/css"  href="reset.css" />
-        <link rel="stylesheet" type="text/css"  href="style.css" />  
+        <link rel="stylesheet" type="text/css"  href="style.css" />
+        <link rel="stylesheet" type="text/css"  href="animation.css" />
     </head>
     <body>
         <section class="main">
             <div class="info">
-                <div class="polygon polygon-grey"><img src="images/polygon-grey.svg" alt=""></div>
-                <div class="polygon polygon-blue"><img src="images/polygon-blue.svg" alt=""></div>
-                <div class="polygon polygon-small-1"><img src="images/polygon-small-1.svg" alt=""></div>
-                <div class="polygon polygon-small-2"><img src="images/polygon-small-2.svg" alt=""></div>
-                <div class="polygon polygon-smallest"><img src="images/polygon-smallest.svg" alt=""></div>
-                <div class="polygon polygon-ga">
-                    <img src="images/polygon-ga.svg" alt="">
+                <img class="polygon-grey" id="polygon1" src="images/polygon-grey.svg" alt="">
+                <img class="polygon-blue" id="polygon2" src="images/polygon-blue.svg" alt="">
+                <img class="polygon polygon-border-large" src="images/polygon-border-large.svg" alt="">
+                <img class="polygon polygon-border-medium" src="images/polygon-border-medium.svg" alt="">
+                <img class="polygon polygon-border-small" src="images/polygon-border-small.svg" alt="">
+                <div class="polygon polygon-ga"><img id="polygon6" src="images/polygon-ga.svg" alt="" >
                     <div class="left-text-box">
                         <h1>Welcome to GameAnalytics</h3>
                         <p>You can collect, visualize, and understand your player data all in one platform.</p>
                     </div>
                 </div>
-                <div class="polygon polygon-border-large"><img src="images/polygon-border-large.svg" alt=""></div>
-                <div class="polygon polygon-border-medium"><img src="images/polygon-border-medium.svg" alt=""></div>
-                <div class="polygon polygon-border-small"><img src="images/polygon-border-small.svg" alt=""></div>
+                <img class="polygon polygon-small-1"id="polygon3" src="images/polygon-small-1.svg" alt="">
+                <img class="polygon polygon-small-2" id="polygon4" src="images/polygon-small-2.svg" alt="">
+                <img class="polygon polygon-small-3"id="polygon3" src="images/polygon-small-1.svg" alt="">
+                <img class="polygon polygon-small-4" id="polygon4" src="images/polygon-small-2.svg" alt="">
+                <img class="polygon polygon-smallest" id="polygon5" src="images/polygon-smallest.svg" alt="">
+                <img class="polygon polygon-smallest-1" id="polygon5" src="images/polygon-smallest.svg" alt="">
             </div>
             <div class="login">
-                <div class="login-form flex-layout">
-                    <div class="flex_1 flex-grow">
+                <div class="login-form flex-layout flex-between">
+                    <div></div>
+                    <div>
                         <div class="logo"><img src="images/logo.svg" alt="facebook"></div>
                         <div class="logo-text">Sign in with your social media account or enter your email and password.</div>
                         <div class="social-icons">
@@ -62,8 +66,7 @@
                             </div>
                         </form>
                     </div>
-
-                    <ul class="bottom-list">
+                    <ul class=" bottom-list">
                         <li><a href="">Support</a></li>
                         <li><a href="">Terms of service</a></li>
                         <li><a href="">Documentation</a></li>
@@ -77,4 +80,5 @@
             </div>
         </section>
     </body>
+    <script src="animation.js"></script> 
 </html>

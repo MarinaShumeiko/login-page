@@ -1,0 +1,73 @@
+.run-animation {
+    width: 300px;
+    height: 300px;
+    transition: width 2s ease-out;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(2);
+    }
+    
+} 
+
+@keyframes rotate-left {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        left: 45%;
+        top: 0;
+        transform: rotate(0);
+    }
+    100% {
+       top: 20%;
+       left: -30%;
+       transform: rotate(360deg);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        right: 0;
+        bottom: 0;
+        transform: rotate(0);
+    }
+    100% {
+        left: 50%;
+        bottom: 36%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move3 {
+    0% {
+        right: 0;
+        bottom: 0;
+        transform: rotate(0);
+    }
+    100% {
+        right: -20%;
+        bottom: 40%;
+        transform: rotate(-360deg);
+    }
+}
